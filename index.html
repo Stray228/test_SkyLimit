@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Настройки</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <label>Header:</label>
+      <input type="radio" name="header" value="header1">Header 1
+      <input type="radio" name="header" value="header2">Header 2
+      <div class="header-container"></div>
+    </header>
+
+    <aside>
+      <label>Sidebar:</label>
+      <input type="radio" name="sidebar" value="left" checked>Left
+      <input type="radio" name="sidebar" value="right">Right
+      <input type="radio" name="sidebar" value="none">No Sidebar
+    </aside>
+
+    <form id="color-form">
+      <fieldset>
+        <label>Background Color:</label>
+        <input type="color" name="background-color" id="background-color" value="#ffffff">
+        <span id="bgColorPreview"></span>
+      </fieldset>
+
+      <fieldset>
+        <label>Text Color:</label>
+        <input type="color" name="text-color" id="text-color" value="#000000">
+        <span id="textColorPreview"></span>
+      </fieldset>
+
+      <button type="submit">Apply Colors</button>
+    </form>
+
+    <div id="contact-page">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <fieldset>
+          <label>Name:</label>
+          <input type="text" name="name" required>
+        </fieldset>
+
+        <fieldset>
+          <label>Email:</label>
+          <input type="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+          <label>Message:</label>
+          <textarea name="message" rows="4" required></textarea>
+        </fieldset>
+
+        <div class="antispam"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <footer>
+      <label>Footer:</label>
+      <input type="radio" name="footer" value="footer1">Footer 1
+      <input type="radio" name="footer" value="footer2">Footer 2
+      <div class="footer-container"></div>
+    </footer>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
